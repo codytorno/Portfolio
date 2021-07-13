@@ -16,7 +16,6 @@ import {
 import { ScrollButton } from "../Navigation/ScrollButton/ScrollButtonElements";
 
 const InfoSection = ({ data }) => {
-  console.log(data);
   return (
     <>
       <InfoContainer lightBg={data.backgroundLight} id={data.id}>

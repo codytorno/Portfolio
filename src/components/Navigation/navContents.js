@@ -12,7 +12,7 @@ export const navContents = [
     title: "Services",
   },
   {
-    link: "signup",
-    title: "Sign Up",
+    link: "projects",
+    title: "Projects",
   },
 ];

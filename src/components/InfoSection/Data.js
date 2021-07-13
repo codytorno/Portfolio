@@ -3,17 +3,16 @@ export const aboutInfo = {
   backgroundLight: true,
   textLight: false,
   descriptionLight: false,
-  topLine: "Premium Bank",
-  headline: "Unlimited Transations with zero fees",
+  topLine: "Im Awesome",
+  headline: "Its crazy to think this is my first website",
   description:
-    "Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.",
-  buttonLabel: "Get started",
+    "Learning new skills are a passion of mine.  I never settle for whats expected and do everything i can to go above and beyond",
+  buttonLabel: "Hire me",
   imgStart: false,
   img: require("../../images/svg-car.svg").default,
   alt: "Car",
   dark: true,
   primary: true,
-  darkText: false,
 };
 
 export const discoverInfo = {
@@ -21,11 +20,11 @@ export const discoverInfo = {
   backgroundLight: false,
   textLight: true,
   descriptionLight: true,
-  topLine: "Premium Bank",
-  headline: "Discover Now!",
+  topLine: "Hobbies",
+  headline: "Traveling the world",
   description:
-    "Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.",
-  buttonLabel: "Get started",
+    "In order to appreciate the world you must see the world, Checkout some of my awesome adventures!",
+  buttonLabel: "See More",
   imgStart: true,
   img: require("../../images/svg-office.svg").default,
   alt: "Car",
@@ -34,16 +33,15 @@ export const discoverInfo = {
 
 export const servicesInfo = {
   id: "services",
-  backgroundLight: false,
-  textLight: true,
-  descriptionLight: true,
-  topLine: "Premium Bank",
-  headline: "These are our services",
-  description:
-    "Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.",
-  buttonLabel: "Get started",
+  backgroundLight: true,
+  textLight: false,
+  descriptionLight: false,
+  topLine: "Skills",
+  headline: "Here are some things im good at",
+  description: ".NET, SQL, Javascript, React, etc",
+  buttonLabel: "See my Projects",
   imgStart: false,
   img: require("../../images/svg-piggybank.svg").default,
   alt: "Car",
-  primary: false,
+  primary: true,
 };

@@ -30,10 +30,10 @@ const Navbar = ({ toggle }) => {
                     to={element.link}
                     smooth={true}
                     duration={500}
-                    spy={true}
                     exact="true"
                     offset={-80}
                     activeClass="active"
+                    spy={true}
                   >
                     {element.title}
                   </NavLinks>

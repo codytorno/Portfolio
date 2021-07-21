@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { ScrollButton } from "../Navigation/ScrollButton/ScrollButtonElements";
 import {
   HeroContainer,
   HeroBackground,
@@ -10,6 +9,7 @@ import {
   HeroBtnWrapper,
   ArrowForward,
   ArrowRight,
+  ResumeButton,
 } from "./HeroElements";
 import Video from "../../videos/video.mp4";
 
@@ -35,13 +35,13 @@ const HeroSection = () => {
           Based in {Location}. {Occupation}. {description}.
         </HeroP>
         <HeroBtnWrapper>
-          <ScrollButton
-            to="about"
+          <ResumeButton
+            href="https://drive.google.com/uc?export=download&id=1XCoh8aaFyLbih3Vn-_hlL4UYs8ntDDCD"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
           >
             Get Resume {hover ? <ArrowRight /> : <ArrowForward />}
-          </ScrollButton>
+          </ResumeButton>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>

@@ -30,14 +30,14 @@ const InfoSection = ({ data }) => {
                 </Description>
                 <BtnWrap>
                   <ScrollButton
+                    primary={data.primary ? 1 : 0}
+                    dark={data.dark ? 1 : 0}
                     to="home"
                     smooth={true}
                     duration={500}
-                    spy={true}
                     exact="true"
                     offset={-80}
-                    primary={data.primary ? 1 : 0}
-                    dark={data.dark ? 1 : 0}
+                    spy={true}
                   >
                     {data.buttonLabel}
                   </ScrollButton>

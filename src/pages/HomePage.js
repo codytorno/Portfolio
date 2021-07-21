@@ -8,6 +8,7 @@ import {
   discoverInfo,
   servicesInfo,
 } from "../components/InfoSection/Data";
+import ProjectSection from "../components/ProjectSection/ProjectSection";
 
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +26,7 @@ const HomePage = () => {
       <InfoSection data={aboutInfo} />
       <InfoSection data={discoverInfo} />
       <InfoSection data={servicesInfo} />
+      <ProjectSection />
     </>
   );
 };

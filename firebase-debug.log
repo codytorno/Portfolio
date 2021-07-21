@@ -1,0 +1,13 @@
+[debug] [2021-07-13T05:58:08.490Z] ----------------------------------------------------------------------
+[debug] [2021-07-13T05:58:08.493Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Cody_Torno\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-07-13T05:58:08.493Z] CLI Version:   9.16.0
+[debug] [2021-07-13T05:58:08.493Z] Platform:      win32
+[debug] [2021-07-13T05:58:08.493Z] Node Version:  v14.15.3
+[debug] [2021-07-13T05:58:08.495Z] Time:          Tue Jul 13 2021 00:58:08 GMT-0500 (Central Daylight Time)
+[debug] [2021-07-13T05:58:08.495Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-13T05:58:08.593Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-13T05:58:08.594Z] > authorizing via signed-in user (cody.torno1@gmail.com)
+[debug] [2021-07-13T05:58:08.594Z] [iam] checking project portfolio-2be99 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-07-13T05:58:08.597Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-2be99:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}

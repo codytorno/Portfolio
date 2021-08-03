@@ -8,19 +8,19 @@ export const projectData = [
     Description: "React Calculator Application",
   },
   {
-    Title: "Notes App",
+    Title: "Notes",
     Description: "React Calculator Application",
   },
   {
-    Title: "Movie Trailer App",
+    Title: "Movie Trailers",
     Description: "React Calculator Application",
   },
   {
-    Title: "Finance App",
+    Title: "NW Finance",
     Description: "React Calculator Application",
   },
   {
-    Title: "Fitness App",
+    Title: "Fitness Now",
     Description: "React Calculator Application",
   },
 ];

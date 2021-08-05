@@ -24,10 +24,12 @@ const HomePage = () => {
       <Sidebar isOpen={isOpen} toggle={toggleSidebar} />
       <Navbar toggle={toggleSidebar} />
       <HeroSection />
+      {/* 
       <InfoSection data={aboutInfo} />
       <InfoSection data={discoverInfo} />
       <InfoSection data={servicesInfo} />
       <ProjectSection />
+      */}
       <Footer />
     </>
   );

@@ -9,11 +9,17 @@ export const SidebarContainer = styled.aside`
   width: 100%;
   height: 100%;
   background: #0d0d0d;
+  padding-top: 50px;
   display: grid;
   align-items: center;
   transition: 0.3s ease-in-out;
-  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   right: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+
+  @media screen and (max-width: 480px) {
+    right: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+    opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+  }
 `;
 
 export const CloseIcon = styled(FaTimes)`

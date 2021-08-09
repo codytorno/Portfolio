@@ -2,14 +2,9 @@ import React, { useState } from "react";
 import Sidebar from "../components/Navigation/Sidebar/Sidebar";
 import Navbar from "../components/Navigation/TopNavBar/Navbar";
 import HeroSection from "../components/HeroSection/HeroSection";
-import InfoSection from "../components/InfoSection/InfoSection";
-import {
-  aboutInfo,
-  discoverInfo,
-  servicesInfo,
-} from "../components/InfoSection/Data";
-import ProjectSection from "../components/ProjectSection/ProjectSection";
 import Footer from "../components/Footer/Footer";
+import AboutMeSection from "../components/AboutMe/AboutMeSection";
+import Portfolio from "../Data";
 
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,13 +18,8 @@ const HomePage = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggleSidebar} />
       <Navbar toggle={toggleSidebar} />
-      <HeroSection />
-      {/* 
-      <InfoSection data={aboutInfo} />
-      <InfoSection data={discoverInfo} />
-      <InfoSection data={servicesInfo} />
-      <ProjectSection />
-      */}
+      <HeroSection data={Portfolio} />
+      <AboutMeSection data={Portfolio.aboutMe} />
       <Footer />
     </>
   );

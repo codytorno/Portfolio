@@ -79,6 +79,7 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-shadow: black 0px 0px 11px;
 `;
 
 export const HeroH1 = styled.h1`

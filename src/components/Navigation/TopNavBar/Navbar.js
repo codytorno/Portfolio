@@ -8,8 +8,6 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavBtn,
-  NavBtnLink,
 } from "./NavbarElements";
 import { navContents } from "../navContents";
 
@@ -18,7 +16,17 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">Cody Torno</NavLogo>
+          <NavLogo
+            to="home"
+            smooth={true}
+            duration={500}
+            exact="true"
+            offset={-80}
+            activeClass="active"
+            spy={true}
+          >
+            Cody Torno
+          </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>

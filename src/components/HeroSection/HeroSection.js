@@ -42,7 +42,7 @@ const HeroSection = ({ data }) => {
             onMouseEnter={onHover}
             onMouseLeave={onHover}
           >
-            Get Resume {hover ? <ArrowRight /> : <ArrowForward />}
+            Resume {hover ? <ArrowRight /> : <ArrowForward />}
           </ResumeButton>
         </HeroBtnWrapper>
       </HeroContent>

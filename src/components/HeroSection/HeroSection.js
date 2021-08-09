@@ -11,13 +11,8 @@ import {
   ArrowRight,
   ResumeButton,
 } from "./HeroElements";
-import Video from "../../videos/video.mp4";
 
-const Location = "Fort Worth";
-const Occupation = "Mechanical Engineer & Software Developer";
-const description = "I love challenging problems and learning new things.";
-
-const HeroSection = () => {
+const HeroSection = ({ data }) => {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
@@ -25,18 +20,25 @@ const HeroSection = () => {
   };
 
   return (
-    <HeroContainer id="home">
+    <HeroContainer id={data.hero.id}>
       <HeroBackground>
-        <VideoBackground autoPlay loop muted src={Video} type="video/mp4" />
+        <VideoBackground
+          autoPlay
+          loop
+          playsInline
+          muted
+          src={data.hero.video}
+          type="video/mp4"
+        />
       </HeroBackground>
       <HeroContent>
-        <HeroH1> Im Cody Torno </HeroH1>
+        <HeroH1> {data.hero.title}</HeroH1>
         <HeroP>
-          Based in {Location}. {Occupation}. {description}.
+          {data.aboutMe.occupation}. {data.hero.description}.
         </HeroP>
         <HeroBtnWrapper>
           <ResumeButton
-            href="https://drive.google.com/uc?export=download&id=1XCoh8aaFyLbih3Vn-_hlL4UYs8ntDDCD"
+            href={data.hero.resumelink}
             onMouseEnter={onHover}
             onMouseLeave={onHover}
           >
